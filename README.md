@@ -1,3 +1,26 @@
+## Note
+
+This repository is forked from https://github.com/Avik-creator/plane-discord-bot-main.
+
+I explored this project to better understand how Discord bots are structured, including command handling, event-driven design, and API integrations.
+
+## Extensions / Ideas I Explored
+
+While working with this codebase, I thought about extending it into a **Daily Summary Bot** focused on team productivity and engineering performance.
+
+In particular, I explored the idea of integrating **DORA metrics** (Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery) to provide lightweight, automated summaries of team performance directly through Discord.
+
+This would allow teams to:
+- Receive daily or weekly summaries of engineering velocity
+- Track changes in performance over time
+- Surface potential bottlenecks in development workflows
+
+I began thinking through how such a system could be implemented on top of this bot’s architecture, including collecting signals from development pipelines and formatting them into readable summaries.
+
+### Example Feature Idea
+
+- `/daily-summary` → returns a summary of key team metrics such as deployments, failures, and lead time trends
+
 # Plane Discord Bot (Cloudflare Workers Edition)
 
 A serverless Discord bot that integrates with [Plane](https://plane.so) project management platform. This bot runs on Cloudflare Workers using the Discord Interactions Endpoint (Webhooks), making it highly scalable, cost-effective, and low-latency.
